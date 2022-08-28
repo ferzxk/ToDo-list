@@ -1,0 +1,110 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato;
+    font-size: 62.5%;
+}
+
+
+body{
+    background-color: #4188a7;
+    color: #fff;
+    min-height: 100vh;
+}
+
+header h1 {
+    font-size: 5.6rem;
+}
+
+header, form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+}
+
+form input, form button {
+    background-color: #fff;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    font-size: 2.6rem;
+}
+
+input::placeholder {
+    color: #b5b5b5;
+}
+
+form button {
+    color: #2a7899;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form button:hover {
+    background-color: #2a7899;
+    color: #fff;
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    margin: 1.5rem;
+    font-size: 2.4rem;
+    transition: all 0.5s ease;
+}
+
+.todo-item {
+    flex: 1;
+    padding: 0 0.5rem;
+}
+
+
+.complete-button, .trash-button {
+   padding: 1.2rem;
+   background: #f63e22;
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   outline: none;
+   font-size: 1.2rem;
+}
+
+
+.complete-button {
+    background: rgb(16, 190, 16);
+}
+
+/* aby kliknięcie na ikonki wewnątrz przycisków nie robiło różnice - że nie działa  */
+.fa-check,
+.fa-trash{
+    pointer-events: none;
+}
+
+.fall {
+    transform: translateY(0.6rem) rotateZ(20deg);
+    opacity: 0.5;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
